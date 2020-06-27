@@ -61,6 +61,16 @@ f"Revenue Average is {revenue_average}\n"
 f"Greatest Increase in Profits {greatest_increase_date} {Greatest_increase}\n"
 f"Greatest Decrease in Profits {greatest_decrease_date}  {Greatest_decrease}")
 
+output_path=os.path.join("Analysis_PyBank","myfile_Analysis.txt")
+with open(output_path,'w') as text:
+    text.write("Financial Analysis\n")
+    text.write("--------------------\n")
+    text.write(f"Total Months is  {len(length_of_month)} \n"
+f"The Total Revenue is :  ${total_revenue} \n"
+f"Revenue Average is ${revenue_average}\n"
+f"Greatest Increase in Profits {greatest_increase_date} (${Greatest_increase})\n"
+f"Greatest Decrease in Profits {greatest_decrease_date}  (${Greatest_decrease})")
+
 
 
 
